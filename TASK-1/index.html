@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Personal Profile | SHUBHAM YADAV</title>
+  
+</head>
+
+<body>
+  <!-- Accessibility: allows keyboard users to skip repeated navigation -->
+  <a href="#main">Skip to main content</a>
+
+  <!--
+    <header> is semantic: it holds the introductory content of the page.
+    Better than using a generic <div> because it communicates meaning.
+  -->
+  <header id="top">
+    <h1>Your Name</h1>
+    <p>Short bio: Aspiring Web Developer, BTech (CSE), interested in building accessible web pages.</p>
+
+    <!-- Profile Image with proper alt text (required in task) -->
+    <img src="" alt="Profile photo" width="160" height="160" />
+
+    <!--
+      <nav> is semantic navigation.
+      Internal anchor links (required in task) jump to sections of the same page.
+    -->
+    <nav aria-label="Primary navigation">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!--
+    <main> contains the main content unique to this page.
+    Screen readers can jump directly to main content.
+  -->
+  <main id="main">
+    <!--
+      <section> groups related content. Each section has a heading.
+      Using <section> is better than <div> because it has meaning and structure.
+    -->
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        I enjoy learning web development and building projects that are clean, readable, and accessible.
+      </p>
+
+      <!--
+        <article> represents a self-contained block of content inside a section.
+        (Example: highlights could stand alone.)
+      -->
+      <article>
+        <h3>Quick Highlights</h3>
+        <ul>
+          <li>Learning semantic HTML and accessibility basics</li>
+          <li>Practicing layouts and responsive thinking</li>
+          <li>Improving JavaScript fundamentals</li>
+        </ul>
+      </article>
+    </section>
+
+    <section id="education">
+      <h2>Education</h2>
+
+      <article>
+        <h3>BTech – Computer Science Engineering</h3>
+        <p><strong>Institute:</strong> NSUT </p>
+        <p><strong>Duration:</strong> 2022 – 2026</p>
+        
+      </article>
+
+      <article>
+        <h3>Class XII</h3>
+        <p><strong>Board:</strong> CBSE</p>
+        <p><strong>Year:</strong> 2022 (update)</p>
+      </article>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <!-- Task asks to use tags like h1-h3, p, ul, li -->
+      <ul>
+        <li>HTML5 (Semantic tags, forms)</li>
+        <li>Basic CSS</li>
+        <li>Git & GitHub</li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p><strong>Email:</strong> <a href="mailto:raoshubhamyadav@gmail.com">raoshubhamyadav@gmail.com</a></p>
+
+
+      <p><a href="#top">Back to top</a></p>
+    </section>
+  </main>
+
+  <!--
+    <footer> is semantic: contains footer information for the page.
+  -->
+  <footer>
+    <p>© 2026 Your Name. Built using semantic HTML.</p>
+  </footer>
+</body>
+</html>
