@@ -1,0 +1,1 @@
+This project is a simple personal profile webpage built using only semantic HTML (no CSS). It uses proper structural tags like header, nav, main, section, article, and footer along with headings, paragraphs, and lists to keep the page well-organized and accessible.
